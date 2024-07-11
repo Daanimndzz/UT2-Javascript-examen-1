@@ -12,3 +12,23 @@
  */
 
 console.log('ejercicio 1') //no quitar este console.log, empezar debajo el ejercicio
+
+
+let operacion = window.prompt("Operacion a realizar")
+let a = window.prompt("Numero 1")
+let b = window.prompt("Numero 2")
+let suma = parseFloat(a) + parseFloat(b)
+
+if(operacion === '+'){
+    console.log('Suma='+ suma);
+}else if(operacion === '-'){
+    console.log('Resta='+ (parseFloat(a) - parseFloat(b)));
+}   else if(operacion === 'x'){
+    console.log('Multiplicar='+ suma);
+}else if(operacion === '/'){
+    console.log('Dividir='+ (parseFloat(a) / parseFloat(b)));
+} else{
+    console.log('No conozco esa operacion');
+}
+
+

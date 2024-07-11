@@ -10,3 +10,18 @@
  */
 
 console.log('ejercicio 3') //no quitar este console.log, empezar debajo el ejercicio
+
+function operacion(num1, num2, operacion = 'sumar') {
+    switch(operacion) {
+        case 'sumar':
+            console.log(num1 + num2);
+            break;
+        case 'restar':
+            console.log(num1 - num2);
+            break;
+        default:
+            console.log('Operación desconocida');
+    }
+}
+
+operacion(32, 87 , 'restar'); 
